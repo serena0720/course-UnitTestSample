@@ -22,12 +22,12 @@ struct LottoMachine {
     
     func makeRandomLottoNumbersArray() -> [Int] {
         var numberSet: Set<Int> = []
-        
+
         while numberSet.count < 6 {
             let randomNumber = Int.random(in: 1...45)
             numberSet.insert(randomNumber)
         }
-        
+
         return Array(numberSet)
     }
     
